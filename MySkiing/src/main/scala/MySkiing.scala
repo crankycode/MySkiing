@@ -100,7 +100,6 @@ object MySkiing {
       // Swap with found path, if current best path length is smaller than found path length
       if (bestPath.length < myCurPath.length) {
         bestPath = myCurPath
-//        bestPathSteep = myCurSteep
         bestPathDrop = myGraph(myCurPath.head._1)(myCurPath.head._2) - myGraph(myCurPath.last._1)(myCurPath.last._2)
       }
       // Swap with found path, if current best length is the same as found path length but the drop is smaller
